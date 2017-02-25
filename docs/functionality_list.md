@@ -8,7 +8,7 @@
     - Player win pays 1:1 on a normal win & 3:2 on blackjack
   + Player starts with a certain number of chips and able to place bets from that pool 
   + The game determines the best move based on [basic startegy](https://en.wikipedia.org/wiki/Blackjack#Basic_strategy). **KJ**
-    -Logic for double down
+    - Logic for double down
   + The keeps the [count](https://en.wikipedia.org/wiki/Card_counting) of the boot, based on the Hi-Lo system, and determines whether or not the basic strategy play is best, and if not, which play is better. **KJ**
   
 ##Statistics engine
