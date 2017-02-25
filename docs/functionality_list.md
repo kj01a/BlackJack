@@ -18,7 +18,7 @@
   + Input all data into a sql database
   + Use matplotlib to generate visual reports
   
-##GUI
+##GUI PT
   + Show cards PT
   + Show players bet PT
   + Show players chip pool PT
