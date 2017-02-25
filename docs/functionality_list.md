@@ -19,11 +19,11 @@
   + Use matplotlib to generate visual reports
   
 ##GUI
-  + Show cards
-  + Show players bet
-  + Show players chip pool 
+  + Show cards PT
+  + Show players bet PT
+  + Show players chip pool PT
   
 ##Advanced
   + Turn into a fully installable linux application, utilizing distutils and the setup.py
-  + Utilize the PyGame framework
+  + Utilize the PyGame framework PT
   + Utilize NumPy framework
