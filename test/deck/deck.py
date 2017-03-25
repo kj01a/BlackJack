@@ -1,3 +1,7 @@
+"""
+	At some point I will need to go in and make var names.
+"""
+
 import json
 from random import shuffle
 
