@@ -1,5 +1,5 @@
 """
-	At some point I will need to go in and make var names.
+	At some point I will need to go in and make better var names.
 """
 
 import json
@@ -7,11 +7,10 @@ from random import shuffle
 
 
 class Deck(object):
-    def __init__(self):
-        self.deck = []
-        self.boot = []
-        with open('card_config.json', 'r') as c:
-            self.cards = json.load(c)
+    deck = []
+    boot = []
+    with open('card_config.json', 'r') as c:
+        cards = json.load(c)
 
     def create_deck(self):
         for suit in self.cards["suits"]:
@@ -34,7 +33,19 @@ class Deck(object):
         shuffle(x)
         return x
 
-deck_num = int(input("How many decks will you use? "))
-d = Deck()
-d.create_boot(deck_num)
-print(d.shuffle_deck())
+def begin_game():
+    deck_num = 4
+    d = Deck()
+    d.create_boot(deck_num)
+    return d.shuffle_deck()
+
+
+def engine(the_boot):
+    print(the_boot)
+    print("The dealer deals your cards. They are: {0} {1}".format(the_boot[0],
+                the_boot[1]))
+    the_boot.pop(0)
+    the_boot.pop(0)
+    print(the_boot)
+
+engine(begin_game())
