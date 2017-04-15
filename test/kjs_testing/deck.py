@@ -46,6 +46,6 @@ def engine(the_boot):
                 the_boot[1]))
     the_boot.pop(0)
     the_boot.pop(0)
-    print(the_boot)
+    #print(the_boot)
 
 engine(begin_game())
