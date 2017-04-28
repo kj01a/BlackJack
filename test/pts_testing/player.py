@@ -12,7 +12,6 @@ class Player(object): # The player.
 				for split in hand.split:
 					split.add_card(player.hand.pop(0))
 					split.add_card(the_boot.deal_card())
-					
 			else:
 				print "The dealer will not allow you to split."
 				pass
@@ -20,14 +19,17 @@ class Player(object): # The player.
 	def Hit(self, the_boot): # Draw another card. Possibly linked to Draw?
 		if hand < 21
 			print "The dealer adds another card to your hand."
-			the_boot.Hit #Draw a card from the boot
-				the_boot{2}	#Hand now contains 3 cards		
-			print "Your hand is now, %s." %(hand)
+				hit(player.hand.pop(0))#Draw a card from the boot		
+			print "Your hand is now, %s." %(hand)#hand should reflect number of hits
 		elif hand > 21
 			print "Sorry, but it appears that you fold."
-			
-		
+			endgame()
 		else:
-			print "Congratulations!"
+			print "Congratulations you have 21!"
+			endgame()
 	def Stay(self): # End hand
 		print "Players hand %s." %(hand)
+		endgame()
+
+	#def Double_Down(self)
+		
