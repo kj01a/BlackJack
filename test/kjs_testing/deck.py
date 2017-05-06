@@ -40,12 +40,12 @@ def begin_game():
     return d.shuffle_deck()
 
 
-def engine(the_boot):
-    print(the_boot)
-    print("The dealer deals your cards. They are: {0} {1}".format(the_boot[0],
-                the_boot[1]))
-    the_boot.pop(0)
-    the_boot.pop(0)
-    #print(the_boot)
+def engine(boot):
+	print("The dealer deals your cards. They are: {0} {1}".format(boot[0], boot[1]))
+	boot.pop(0)
+	boot.pop(0)
+	print("The dealer deals your cards. They are: {0} {1}".format(boot[0], boot[1]))
+	boot.pop(0)
+	boot.pop(0)
 
 engine(begin_game())
