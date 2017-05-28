@@ -1,35 +1,69 @@
+from boot2 import *
+from sys import exit
+
 class Player(object): # The player.
 	
-	def __init__(self, player_id, hand = None):
-		player_id.self = input("Set Player ID: ")
+	def __init__(self):
+		pass
 	
-		player_id == hand[]
+	def hit(self):
+		pass
+	
+	def stand(self):
+		exit(0)
+	
+	def split(self):
+		pass
+	
+	def double_down(self):
+		pass
+	
+	def bet(self):
+		pass
+	
+	def surrender(self):
+		pass
+	
+	def enter(self):
 		
-	def Split(self, hand): #split the hand into hand1 and hand2 only if cardx = cardy
-			if hand[0]= hand[1]:
-				hand.split.append(Player('hand_1', deck)
-				hand.split.append(Player('hand_2', deck)
-				for split in hand.split:
-					split.add_card(player.hand.pop(0))
-					split.add_card(the_boot.deal_card())
-			else:
-				print "The dealer will not allow you to split."
-				pass
-					
-	def Hit(self, the_boot): # Draw another card. Possibly linked to Draw?
-		if hand < 21
-			print "The dealer adds another card to your hand."
-				hit(player.hand.pop(0))#Draw a card from the boot		
-			print "Your hand is now, %s." %(hand)#hand should reflect number of hits
-		elif hand > 21
-			print "Sorry, but it appears that you fold."
-			endgame()
+		choice = input("Do you want to play? Y/N? ").lower()
+	
+		if choice == "y":
+			engine(begin_game())
+			print(d.boot)
+			
 		else:
-			print "Congratulations you have 21!"
-			endgame()
-	def Stay(self): # End hand
-		print "Players hand %s." %(hand)
-		endgame()
-
-	#def Double_Down(self)
+			exit(0)
+	
+	def leave(self):
+		pass
 		
+	def play_move(self):
+		pass
+"""
+def begin_game():
+    d = Boot()
+    d.create_boot(4)
+    return d.shuffle_boot()
+    
+def get_hand_value(card0, card1):
+    h = Hand(card0, card1)
+    h.calc_hand_value()
+    return h.hand_value
+    
+def engine(boot):
+    print("The dealer deals your cards. They are: {0} {1}".format(boot[0], boot[1]))
+    print("And the value of the hand is: {0}".format(get_hand_value(boot[0], boot[1])))
+    boot.pop(0)
+    boot.pop(0)
+    print("The dealer deals her cards. They are: {0} {1}".format(boot[0], boot[1]))
+    print("And the value of the hand is: {0}".format(get_hand_value(boot[0], boot[1])))
+    boot.pop(0)
+    boot.pop(0)
+"""		
+		
+p = Player()
+
+p.enter()
+
+
