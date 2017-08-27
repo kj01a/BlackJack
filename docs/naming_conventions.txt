@@ -1,0 +1,18 @@
+Naming conventions
+    Names are not for convinence, they are for communcating
+    Communicate intent
+    Avoid Disinformation
+        If you have to read the code to understand a name, it is a bad name
+    Pronouncable names
+    Avoid encodings
+    Choose parts of speech well
+        Class, variable - nouns
+        Functions - verbs
+        Booleans - predicates
+    Scope rule
+        Variable names should be long when the variable is long in scope and
+        short when short in scope.
+        The opposite is true for classes and functions. Function names should be
+        short for larger scope and long for short (private) scope.
+"Clean code should always read like well written prose."
+            
